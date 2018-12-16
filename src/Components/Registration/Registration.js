@@ -1,3 +1,9 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
 import React, { Component } from 'react';
 
 import {
@@ -39,7 +45,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   container: {
-    flex: 1
+    // flex: 1
   },
   header: {
     textAlign: 'center',
@@ -271,7 +277,8 @@ export default class example extends Component {
       height: 50,
       textAlign: 'center',
       fontSize: 40,
-      fontWeight: 'bold'
+      fontWeight: 'bold',
+      fontFamily: 'Courier'
     } : {};
 
     return (
@@ -325,3 +332,4 @@ export default class example extends Component {
     );
   }
 }
+

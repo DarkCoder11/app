@@ -5,7 +5,7 @@ import Registration from '../../Components/Registration/Registration'
 class RegistrationScreen extends Component {
    confirmCodeHandler = () => {
     this.props.navigator.resetTo({
-      screen: "clearcar.ConfirmCodeScreen",
+      screen: "smartwash.ConfirmCodeScreen",
       title: "Enter Validation numberr",
       passProps: {
         myProp: null
@@ -16,8 +16,8 @@ class RegistrationScreen extends Component {
   render() {
     return (
       <View>
-        <Button title="Next" onPress={this.confirmCodeHandler}/>
         <Registration/>
+        <Button title="Next" onPress={this.confirmCodeHandler}/>
       </View>
     );
   }
